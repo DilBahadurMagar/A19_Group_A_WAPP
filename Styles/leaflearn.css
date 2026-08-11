@@ -1,0 +1,151 @@
+﻿body {
+}
+/* =========================================================
+   LeafLearn Design System
+   Botanical Essence
+   ========================================================= */
+
+:root {
+    /* Colors */
+    --ll-primary: #4d6453;
+    --ll-on-primary: #ffffff;
+    --ll-secondary: #43664d;
+    --ll-on-secondary: #ffffff;
+    --ll-background: #f9faf2;
+    --ll-surface: #f9faf2;
+    --ll-surface-container: #edefe7;
+    --ll-surface-container-high: #e8e9e1;
+    --ll-text: #1a1c18;
+    --ll-text-secondary: #434843;
+    --ll-outline: #737973;
+    --ll-outline-variant: #c3c8c1;
+    --ll-accent: #8a5a1e;
+    --ll-on-accent: #ffffff;
+    --ll-error: #ba1a1a;
+    /* Typography */
+    --ll-font-heading: 'Sintony', sans-serif;
+    --ll-font-body: 'Poppins', sans-serif;
+    --ll-font-label: 'Nunito Sans', sans-serif;
+    /* Shape */
+    --ll-radius-sm: 0.25rem;
+    --ll-radius: 0.5rem;
+    --ll-radius-md: 0.75rem;
+    --ll-radius-lg: 1rem;
+    --ll-radius-xl: 1.5rem;
+    /* Spacing */
+    --ll-space-xs: 4px;
+    --ll-space-sm: 12px;
+    --ll-space-md: 24px;
+    --ll-space-lg: 48px;
+    --ll-space-xl: 80px;
+}
+
+/* =========================================================
+   Base
+   ========================================================= */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--ll-background);
+    color: var(--ll-text);
+    font-family: var(--ll-font-body);
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* =========================================================
+   Typography
+   ========================================================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--ll-font-heading);
+    color: var(--ll-text);
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 40px;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 600;
+}
+
+/* =========================================================
+   Links
+   ========================================================= */
+
+a {
+    color: var(--ll-primary);
+}
+
+    a:hover {
+        color: var(--ll-secondary);
+    }
+
+/* =========================================================
+   Buttons
+   ========================================================= */
+
+.ll-btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: var(--ll-radius);
+    background-color: var(--ll-primary);
+    color: var(--ll-on-primary);
+    font-family: var(--ll-font-label);
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+    .ll-btn-primary:hover {
+        background-color: var(--ll-secondary);
+        color: var(--ll-on-primary);
+    }
+
+/* =========================================================
+   Cards
+   ========================================================= */
+
+.ll-card {
+    background-color: var(--ll-surface-container);
+    border-radius: var(--ll-radius);
+    padding: var(--ll-space-md);
+}
+
+/* =========================================================
+   Layout
+   ========================================================= */
+
+.ll-page {
+    min-height: calc(100vh - 160px);
+}
+
+.ll-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 24px;
+    padding-right: 24px;
+}
