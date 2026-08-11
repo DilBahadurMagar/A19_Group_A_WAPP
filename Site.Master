@@ -2,6 +2,9 @@
 <%@ Register Src="~/Controls/Navbar.ascx"
     TagPrefix="uc"
     TagName="Navbar" %>
+<%@ Register Src="~/Controls/Footer.ascx"
+    TagPrefix="uc"
+    TagName="Footer" %>
 <!DOCTYPE html>
 
 <html lang="en">
@@ -49,23 +52,7 @@
 
     </div>
 </main>
-
-<footer class="ll-footer">
-    <div class="ll-footer-container">
-
-        <div>
-            <div class="ll-footer-brand">LeafLearn</div>
-            <p class="ll-footer-text">
-                Plant knowledge, care, and community learning.
-            </p>
-        </div>
-
-        <div class="ll-footer-copy">
-            &copy; <%: DateTime.Now.Year %> LeafLearn. All rights reserved.
-        </div>
-
-    </div>
-</footer>
+<uc:Footer runat="server" />
     </form>
     <asp:PlaceHolder runat="server">
         <%: Scripts.Render("~/Scripts/bootstrap.js") %>
