@@ -1,6 +1,4 @@
-﻿body {
-}
-/* =========================================================
+﻿/* =========================================================
    LeafLearn Design System
    Botanical Essence
    ========================================================= */
@@ -40,6 +38,7 @@
     --ll-space-xl: 80px;
 }
 
+
 /* =========================================================
    Base
    ========================================================= */
@@ -57,6 +56,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
 }
+
 
 /* =========================================================
    Typography
@@ -90,6 +90,7 @@ h3 {
     font-weight: 600;
 }
 
+
 /* =========================================================
    Links
    ========================================================= */
@@ -101,6 +102,7 @@ a {
     a:hover {
         color: var(--ll-secondary);
     }
+
 
 /* =========================================================
    Buttons
@@ -124,6 +126,26 @@ a {
         color: var(--ll-on-primary);
     }
 
+.ll-btn-outline {
+    display: inline-block;
+    padding: 9px 18px;
+    border: 1px solid var(--ll-primary);
+    border-radius: var(--ll-radius);
+    background-color: transparent;
+    color: var(--ll-primary);
+    font-family: var(--ll-font-label);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+    .ll-btn-outline:hover {
+        background-color: var(--ll-primary);
+        color: var(--ll-on-primary);
+        text-decoration: none;
+    }
+
+
 /* =========================================================
    Cards
    ========================================================= */
@@ -133,6 +155,7 @@ a {
     border-radius: var(--ll-radius);
     padding: var(--ll-space-md);
 }
+
 
 /* =========================================================
    Layout
@@ -148,4 +171,194 @@ a {
     margin: 0 auto;
     padding-left: 24px;
     padding-right: 24px;
+}
+
+
+/* =========================================================
+   Navigation
+   ========================================================= */
+
+.ll-navbar {
+    width: 100%;
+    background-color: var(--ll-background);
+    border-bottom: 1px solid var(--ll-outline-variant);
+}
+
+.ll-navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    min-height: 76px;
+    margin: 0 auto;
+    padding: 0 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.ll-brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--ll-primary);
+    font-family: var(--ll-font-heading);
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+    .ll-brand:hover {
+        color: var(--ll-secondary);
+        text-decoration: none;
+    }
+
+.ll-brand-icon {
+    font-size: 24px;
+}
+
+.ll-navbar-collapse {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;
+    gap: 32px;
+}
+
+.ll-navbar-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.ll-nav-link {
+    display: inline-block;
+    padding: 8px 12px;
+    color: var(--ll-text-secondary);
+    font-family: var(--ll-font-label);
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: var(--ll-radius);
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+    .ll-nav-link:hover {
+        background-color: var(--ll-surface-container);
+        color: var(--ll-primary);
+        text-decoration: none;
+    }
+
+.ll-navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.ll-navbar-toggle {
+    display: none;
+    border: 1px solid var(--ll-outline-variant);
+    border-radius: var(--ll-radius);
+    padding: 8px 12px;
+    background: transparent;
+    color: var(--ll-primary);
+    cursor: pointer;
+}
+
+.ll-navbar-toggle-icon {
+    font-size: 20px;
+}
+
+
+/* =========================================================
+   Footer
+   ========================================================= */
+
+.ll-footer {
+    margin-top: 64px;
+    background-color: var(--ll-surface-container);
+    border-top: 1px solid var(--ll-outline-variant);
+}
+
+.ll-footer-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.ll-footer-brand {
+    color: var(--ll-primary);
+    font-family: var(--ll-font-heading);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.ll-footer-text {
+    margin: 4px 0 0;
+    color: var(--ll-text-secondary);
+    font-size: 14px;
+}
+
+.ll-footer-copy {
+    color: var(--ll-text-secondary);
+    font-family: var(--ll-font-label);
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   Responsive Navigation
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .ll-navbar-container {
+        min-height: 68px;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .ll-navbar-toggle {
+        display: block;
+    }
+
+    .ll-navbar-collapse {
+        display: none;
+        flex-basis: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 16px;
+        padding-bottom: 16px;
+    }
+
+        .ll-navbar-collapse.show {
+            display: flex;
+        }
+
+    .ll-navbar-nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .ll-nav-link {
+        display: block;
+        width: 100%;
+    }
+
+    .ll-navbar-actions {
+        justify-content: flex-start;
+    }
+
+    .ll-footer-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
