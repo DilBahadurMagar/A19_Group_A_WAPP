@@ -1,0 +1,10 @@
+﻿.vs/
+.claude/
+.cursor/
+.gemini/
+.impeccable/
+bin/
+obj/
+*.user
+*.suo
+*.cache
