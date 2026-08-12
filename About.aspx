@@ -1,9 +1,9 @@
-﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="About.aspx.cs" Inherits="LeafLearn.About" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" %>
 
-<asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <main aria-labelledby="title">
-        <h2 id="title"><%: Title %>.</h2>
-        <h3>Your application description page.</h3>
-        <p>Use this area to provide additional information.</p>
-    </main>
-</asp:Content>
+<script runat="server">
+    protected void Page_Load(object sender, EventArgs e)
+    {
+        Response.Redirect("~/Pages/About.aspx", false);
+        Context.ApplicationInstance.CompleteRequest();
+    }
+</script>
