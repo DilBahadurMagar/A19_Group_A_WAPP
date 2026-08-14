@@ -1,4 +1,4 @@
-﻿<%@ Page Title="LeafLearn | Home" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WAPAssignment._Default" %>
+﻿<%@ Page Title="LeafLearn | Home" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="LeafLearn._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main class="leaflearn-page">

@@ -44,16 +44,13 @@
         </asp:ScriptManager>
 
     <uc:Navbar runat="server" />
-        <main class="ll-page">
+<main class="ll-page">
     <div class="ll-container">
-
         <asp:ContentPlaceHolder ID="MainContent" runat="server">
         </asp:ContentPlaceHolder>
+    </div>
 
-        <footer class="site-footer">
-            <div class="container footer-shell">
-                <p>&copy; <%: DateTime.Now.Year %> LeafLearn. Grow with confidence.</p>
-            </div>
+       
 </main>
 <uc:Footer runat="server" />
     </form>

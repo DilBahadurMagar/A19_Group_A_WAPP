@@ -1,4 +1,4 @@
-﻿<%@ Page Title="LeafLearn | Home" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="WAPAssignment._Default" %>
+﻿<%@ Page Title="LeafLearn | Home" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="LeafLearn._Default" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main class="leaflearn-page">
@@ -10,8 +10,8 @@
                     Learn what your plants need, diagnose common issues, and build a healthier home garden with a community that helps each other grow.
                 </p>
                 <div class="hero-actions">
-                    <a class="leaflearn-button primary" href="~/Pages/Login.aspx" runat="server">Log in</a>
-                    <a class="leaflearn-button secondary" href="~/Pages/Register.aspx" runat="server">Create account</a>
+                    <a class="leaflearn-button primary" href="~/Pages/Auth/Login.aspx" runat="server">Log in</a>
+                    <a class="leaflearn-button secondary" href="~/Pages/Auth/Register.aspx" runat="server">Create account</a>
                 </div>
                 <ul class="hero-points" aria-label="Platform highlights">
                     <li>Plant encyclopedia</li>

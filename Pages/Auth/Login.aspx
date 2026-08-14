@@ -1,4 +1,5 @@
-<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="WAPAssignment.LoginPage" %>
+﻿
+<%@ Page Title="Login" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="LeafLearn.Pages.Auth.Login" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <main class="auth-shell" aria-labelledby="login-title">
@@ -27,7 +28,7 @@
 
                 <div class="auth-links">
                     <span>New here?</span>
-                    <a href="~/Register.aspx" runat="server">Create account</a>
+                    <a href="Register.aspx" runat="server">Create account</a>
                 </div>
             </div>
         </section>
